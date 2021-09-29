@@ -71,11 +71,10 @@ int main() {
 
     std::vector<int> nums(amountOfNums);
 
-    std::random_device randomDevice;
-    std::mt19937 engine(randomDevice());
+    std::mt19937 engine(std::chrono::steady_clock::now().time_since_epoch().count());
     std::uniform_int_distribution<int> uniformIntDistribution(0, 9);
 
-    for (int num : nums) {
+    for (int& num : nums) {
         num = uniformIntDistribution(engine);
     }
 
@@ -92,6 +91,6 @@ int main() {
     auto end = std::chrono::steady_clock::now();
 
     std::cout << "Time passed: "
-    << std::chrono::duration_cast<std::chrono::seconds>(end-start).count() << std::endl;
+    << std::chrono::duration_cast<std::chrono::milliseconds>(end-start).count() << std::endl;
 
 }
