@@ -1,0 +1,3 @@
+C:\Users\User\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\212.5080.54\bin\cmake\win\bin\cmake.exe -E rm -f CMakeFiles\AIPO6.dir/objects.a
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\ar.exe cr CMakeFiles\AIPO6.dir/objects.a @CMakeFiles\AIPO6.dir\objects1.rsp
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE -g -Wl,--whole-archive CMakeFiles\AIPO6.dir/objects.a -Wl,--no-whole-archive -o AIPO6.exe -Wl,--out-implib,libAIPO6.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\AIPO6.dir\linklibs.rsp
